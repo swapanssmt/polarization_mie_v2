@@ -1,0 +1,13 @@
+radius=double(2.03/2);
+lambda=double(0.6328);
+nre_med=double(1.33);
+nim_med=double(0.0);
+nre_p=double(1.59);
+nim_p=double(0.0);
+nangles=int64(10);
+rho=double(1.152e-4);
+[mus, s11, s12, s33, s43] = MTmex(radius, lambda, nre_med, nim_med, nre_p, nim_p, nangles, rho);
+s11=real(s11);
+s12=real(s12);
+s33=real(s33);
+s43=real(s43);
