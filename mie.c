@@ -11,7 +11,7 @@
 static void mie_error(char*s)/*:5*/
 #line 69 "mie.w"
 {
-printf("Mie -- %s\n",s);
+mexPrintf("Mie -- %s\n",s);
 exit(1);
 }/*:6*//*11:*//*10:*/
 #line 120 "mie.w"

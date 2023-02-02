@@ -19,7 +19,7 @@ static void array_error(char*s)
 #line 43 "arrays.w"
 
 {
-printf("Array -- %s\n",s);
+mexPrintf("Array -- %s\n",s);
 exit(1);
 }
 
@@ -218,7 +218,7 @@ if(ilow<0)ilow= 0;
 if(ihigh>size-1)ihigh= size-1;
 
 for(j= ilow;j<=ihigh;j++)
-printf("x[%ld]= %-10.5g \n",j,a[j]);
+mexPrintf("x[%ld]= %-10.5g \n",j,a[j]);
 
 }
 
